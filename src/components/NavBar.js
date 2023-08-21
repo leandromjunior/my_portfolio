@@ -1,10 +1,11 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from 'C:/Users/Usuario/Desktop/my-port/my-port/src/assets/img/logo.svg';
 import navIcon1 from 'C:/Users/Usuario/Desktop/my-port/my-port/src/assets/img/nav-icon1.svg';
 import navIcon2 from 'C:/Users/Usuario/Desktop/my-port/my-port/src/assets/img/nav-icon2.svg';
+import navIconGit from 'C:/Users/Usuario/Desktop/my-port/my-port/src/assets/img/nav-icon-github-3.svg';
 
 export const NavBar = () => {
     const [activeLink, setActivateLink] = useState('home');
@@ -48,9 +49,9 @@ export const NavBar = () => {
                 <span className='navbar-text'>
                     <div className='social-icon'>
                         <a href='#'><img src={navIcon1} alt="" /></a>
-                        <a href='#'><img src={navIcon2} alt="" /></a>
+                        <a href='#'><img src={navIconGit} alt="" /></a>
                     </div>
-                    <button className='vvd' onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+                    <button className='vvd' onClick={() => console.log('connect')}><span>Contact</span></button>
                 </span>
                 </Navbar.Collapse>
             </Container>
