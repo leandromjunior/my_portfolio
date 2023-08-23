@@ -6,7 +6,7 @@ import headerImg from "../assets/img/header-img.svg";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [ "Data Science", "Machine Learning", "AI", "MLOPS"]
+    const toRotate = [ "Data Science", "Machine Learning", "AI", "Scientific articles"]
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -44,8 +44,8 @@ export const Banner = () => {
             <Container>
                 <Row className='align-items-center'>
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Welcome to my space</span>
-                        <h1>{`Leandro `}<span className="wrap">{text}</span></h1>
+                        <span className="tagline">Welcome to Leandro's space</span>
+                        <h1>{`What you will find here: `}<span className="wrap">{text}</span></h1>
                         <p>Lorem Ipsum</p>
                         <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25}/></button>
                     </Col>
