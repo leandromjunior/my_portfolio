@@ -46,8 +46,7 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to Leandro's space</span>
                         <h1>{`What you will find here: `}<span className="wrap">{text}</span></h1>
-                        <p>Lorem Ipsum</p>
-                        <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25}/></button>
+                        <p></p>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img" />
