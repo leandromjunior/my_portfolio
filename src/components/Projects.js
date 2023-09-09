@@ -4,33 +4,37 @@ import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import recommender from "../assets/img/Recommender_.png";
+import customerBehaviour2 from "../assets/img/customer-behaviour-analysis_.png";
 
 export const Projects = () => {
 
     const projects = [
         {
-            title: "Customer Behavior",
+            title: "Customer Behaviour",
             description: "Same brief of the notebook description",
-            imgUrl: projImg1,
+            imgUrl: customerBehaviour2,
+            link: 'https://github.com/leandromjunior/portfolio-projects-/tree/efdde1f080cf96be77e6643edefea02cfaf69fc2/Customer%20Behaviour',
         },
         {
             title: "Churn",
             description: "Same brief of the notebook description",
             imgUrl: projImg2,
+            link: "https://github.com/leandromjunior/portfolio-projects-/tree/efdde1f080cf96be77e6643edefea02cfaf69fc2/Churn",
         },
         {
-            title: "Recomendation System",
+            title: "Recommendation System",
             description: "Same brief of the notebook description",
-            imgUrl: projImg3,
+            imgUrl: recommender,
+            link: "https://github.com/leandromjunior/portfolio-projects-/tree/efdde1f080cf96be77e6643edefea02cfaf69fc2/Recommendation%20System",
         },
         {
-            title: "Customer Behavior",
+            title: "Market Segmentation",
             description: "Same brief of the notebook description",
             imgUrl: projImg1,
         },
         {
-            title: "Customer Behavior",
+            title: "Exoplanets Habitability Index",
             description: "Same brief of the notebook description",
             imgUrl: projImg1,
         },
@@ -41,11 +45,11 @@ export const Projects = () => {
                 <Row>
                     <Col>
                         <h2>Projects</h2>
-                        <p>Lorem Ipsum</p>
+                        <p>Here you will see some recently projects made by me</p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
-                            <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                            <Nav.Link eventKey="first">Some Projects</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                             <Nav.Link eventKey="second">Scientific Articles</Nav.Link>
@@ -73,7 +77,7 @@ export const Projects = () => {
                     </Col>
                 </Row>
             </Container> 
-            <img className="background-image-right" src={colorSharp2}></img>
+            <img className="background-image-right" src={colorSharp2} alt=""></img>
         </section>
     )
 }
