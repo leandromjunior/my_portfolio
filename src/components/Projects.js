@@ -6,6 +6,8 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import recommender from "../assets/img/Recommender_.png";
 import customerBehaviour2 from "../assets/img/customer-behaviour-analysis_.png";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
@@ -44,8 +46,13 @@ export const Projects = () => {
            <Container>
                 <Row>
                     <Col>
+                    <TrackVisibility>
+                        {({isVisible}) =>
+                        <div className={isVisible ? "animate__animated animate__bounce" : ""}>
                         <h2>Projects</h2>
                         <p>Here you will see some recently projects made by me</p>
+                        </div>}
+                    </TrackVisibility>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                             <Nav.Item>
