@@ -6,6 +6,9 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import recommender from "../assets/img/Recommender_.png";
 import customerBehaviour2 from "../assets/img/customer-behaviour-analysis_.png";
+import article from "../assets/img/article3-2.png";
+import article2 from "../assets/img/article.jpg";
+import tcc from "../assets/doc/TCC - Leandro Motta Junior.pdf";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -37,9 +40,19 @@ export const Projects = () => {
         },
         {
             title: "Exoplanets Habitability Index",
-            description: "Same brief of the notebook description",
-            imgUrl: projImg1,
+            description: "Machine learning project focused on identifying potentially habitable planets",
+            imgUrl: article2,
+            link: "https://github.com/leandromjunior/Exoplanets_habitability.git",
         },
+    ]
+
+    const articles = [
+        {
+            title: "Towards a Machine Learning Approach for Facilitating Exoplanet Habitability Discovery",
+            description: "We present a machine learning model for identifying habitable exoplanets using a concise set of variables related to planetary location and host star characteristics.",
+            imgUrl: article,
+            link: tcc,
+        }
     ]
     return (
         <section className="project" id="project">
@@ -50,7 +63,7 @@ export const Projects = () => {
                         {({isVisible}) =>
                         <div className={isVisible ? "animate__animated animate__bounce" : ""}>
                         <h2>Projects</h2>
-                        <p>Here you will see some recently projects made by me</p>
+                        <p>Here you will see some recently projects and articles made by me</p>
                         </div>}
                     </TrackVisibility>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
@@ -59,7 +72,7 @@ export const Projects = () => {
                             <Nav.Link eventKey="first">Some Projects</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                            <Nav.Link eventKey="second">Scientific Articles</Nav.Link>
+                            <Nav.Link eventKey="second">Articles</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                             <Nav.Link eventKey="third">EDA</Nav.Link>
@@ -77,7 +90,17 @@ export const Projects = () => {
                                    } 
                                 </Row>
                             </Tab.Pane>
-                            <Tab.Pane eventKey="second">Lorem</Tab.Pane>
+                            <Tab.Pane eventKey="second">
+                                <Row>
+                                {
+                                        articles.map((project, index) => {
+                                            return (
+                                                <ProjectCard key={index} {...project} />
+                                            )
+                                        })
+                                   }
+                                </Row>
+                            </Tab.Pane>
                             <Tab.Pane eventKey="third">Ipsum</Tab.Pane>                          
                         </Tab.Content>
                         </Tab.Container>
