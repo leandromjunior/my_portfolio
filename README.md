@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+To start the project:
+
+1- Open CMD
+2 - Type the project (folder) Path
+3 - Run "npm install node_modules"
+4 - Run "npm start"
+
+
+Line 38 of components/NavBar.js we had the following line of code: <img src = {logo} alt="Logo" />. That was responsible for the page Logo
+but i prefer not to use it at this moment, so i removed it from the code
