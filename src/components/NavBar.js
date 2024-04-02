@@ -2,10 +2,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import React, { useState, useEffect } from 'react';
-import logo from 'C:/Users/Usuario/Desktop/my-port/my-port/src/assets/img/logo.svg';
-import navIcon1 from 'C:/Users/Usuario/Desktop/my-port/my-port/src/assets/img/nav-icon1.svg';
-import navIcon2 from 'C:/Users/Usuario/Desktop/my-port/my-port/src/assets/img/nav-icon2.svg';
-import navIconGit from 'C:/Users/Usuario/Desktop/my-port/my-port/src/assets/img/nav-icon-github-3.svg';
+import logo from 'C:/Users/Usuario/Desktop/my_portfolio/src/assets/img/logo.svg';
+import navIcon1 from 'C:/Users/Usuario/Desktop/my_portfolio/src/assets/img/nav-icon1.svg';
+import navIcon2 from 'C:/Users/Usuario/Desktop/my_portfolio/src/assets/img/nav-icon2.svg';
+import navIconGit from 'C:/Users/Usuario/Desktop/my_portfolio/src/assets/img/nav-icon-github-3.svg';
 
 export const NavBar = () => {
     const [activeLink, setActivateLink] = useState('home');
@@ -35,7 +35,7 @@ export const NavBar = () => {
         <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
             <Container>
                 <Navbar.Brand href="/">
-                    <img src = {logo} alt="Logo" />
+                    
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggle-icon"></span>
