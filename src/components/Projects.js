@@ -3,11 +3,14 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/project-img1.png";
+import churnImg from "../assets/img/churn_image.jpg";
 import projImg2 from "../assets/img/project-img2.png";
 import recommender from "../assets/img/Recommender_.png";
 import customerBehaviour2 from "../assets/img/customer-behaviour-analysis_.png";
+import customerB from "../assets/img/customer_behavior.jpg";
 import article from "../assets/img/article3-2.png";
 import article2 from "../assets/img/article.jpg";
+import earthImg from "../assets/img/earth_image.jpg";
 import tcc from "../assets/doc/TCC - Leandro Motta Junior.pdf";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -18,13 +21,13 @@ export const Projects = () => {
         {
             title: "Customer Behaviour",
             description: "Same brief of the notebook description",
-            imgUrl: customerBehaviour2,
+            imgUrl: customerB,
             link: 'https://github.com/leandromjunior/portfolio-projects-/tree/efdde1f080cf96be77e6643edefea02cfaf69fc2/Customer%20Behaviour',
         },
         {
             title: "Churn",
             description: "Same brief of the notebook description",
-            imgUrl: projImg2,
+            imgUrl: churnImg,
             link: "https://github.com/leandromjunior/portfolio-projects-/tree/efdde1f080cf96be77e6643edefea02cfaf69fc2/Churn",
         },
         {
@@ -34,9 +37,9 @@ export const Projects = () => {
             link: "https://github.com/leandromjunior/portfolio-projects-/tree/efdde1f080cf96be77e6643edefea02cfaf69fc2/Recommendation%20System",
         },
         {
-            title: "Market Segmentation",
-            description: "Same brief of the notebook description",
-            imgUrl: projImg1,
+            title: "In Progress",
+            description: "Earth Similarity Index predictive model under construction",
+            imgUrl: earthImg,
         },
         {
             title: "Exoplanets Habitability Index",
@@ -75,7 +78,7 @@ export const Projects = () => {
                             <Nav.Link eventKey="second">Articles</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                            <Nav.Link eventKey="third">EDA</Nav.Link>
+                            <Nav.Link eventKey="third">Deployments</Nav.Link>
                             </Nav.Item>
                         </Nav>
                         <Tab.Content>
@@ -101,7 +104,7 @@ export const Projects = () => {
                                    }
                                 </Row>
                             </Tab.Pane>
-                            <Tab.Pane eventKey="third">Ipsum</Tab.Pane>                          
+                            <Tab.Pane eventKey="third">Some implemented models</Tab.Pane>                          
                         </Tab.Content>
                         </Tab.Container>
                     </Col>
