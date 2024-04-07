@@ -35,7 +35,7 @@ export const Skills = () => {
                     <Col>
                         <div className="skill-bx">
                             <h2>
-                                Skills
+                                (Soft) Skills
                             </h2>
                             <p>Some brief skills that I carry and seek constant knowledge</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
@@ -44,8 +44,16 @@ export const Skills = () => {
                                     <h5>Python</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter3} alt='image' />
+                                    <img src={meter1} alt='image' />
                                     <h5>SQL</h5>
+                                </div>
+                                <div className='item'>
+                                    <img src={meter3} alt='image' />
+                                    <h5>Autodidact</h5>
+                                </div>
+                                <div className='item'>
+                                    <img src={meter3} alt='image' />
+                                    <h5>Problem-Solving</h5>
                                 </div>
                                 <div className='item'>
                                     <img src={meter2} alt='image' />
