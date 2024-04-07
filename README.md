@@ -69,6 +69,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+Original project github link: https://github.com/judygab/web-dev-projects/tree/main/personal-portfolio
+
 
 To start the project:
 
@@ -77,6 +79,13 @@ To start the project:
 3 - Run "npm install node_modules"
 4 - Run "npm start"
 
+Updates recentes:
 
+01/04/2024
 Line 38 of components/NavBar.js we had the following line of code: <img src = {logo} alt="Logo" />. That was responsible for the page Logo
 but i prefer not to use it at this moment, so i removed it from the code
+
+06/04/2024
+ Este updtate é apenas temporário (por enquanto)
+O botão <Contact> localizado no canto superior direito (NavBar) foi renomeado para Curriculum, o mesmo redireciona para o documento do curriculo por enquanto. A ideia do botão é redirecionar para o final da página do portfolio, onde deve ter uma seção "Contact", porém
+a mesma está com alguns erros, então enquanto esses erros não são solucionados, o botão está com a função de redirecionamento para o curriculo
