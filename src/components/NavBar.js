@@ -6,6 +6,7 @@ import logo from 'C:/Users/Usuario/Desktop/my_portfolio/src/assets/img/logo.svg'
 import navIcon1 from 'C:/Users/Usuario/Desktop/my_portfolio/src/assets/img/nav-icon1.svg';
 import navIcon2 from 'C:/Users/Usuario/Desktop/my_portfolio/src/assets/img/nav-icon2.svg';
 import navIconGit from 'C:/Users/Usuario/Desktop/my_portfolio/src/assets/img/nav-icon-github-3.svg';
+import curriculum from "../assets/doc/curriculum.pdf";
 
 export const NavBar = () => {
     const [activeLink, setActivateLink] = useState('home');
@@ -51,7 +52,9 @@ export const NavBar = () => {
                         <a href='#'><img src={navIcon1} alt="" /></a>
                         <a href='https://github.com/leandromjunior' target="_blank" rel="noopener noreferrer"><img src={navIconGit} alt="" /></a>
                     </div>
-                    <button className='vvd' onClick={() => console.log('connect')}><span>Contact</span></button>
+                    <a href={curriculum} target="_blank" rel="noopener noreferrer">
+                    <button className='vvd'><span>Curriculum</span></button>
+                    </a>
                 </span>
                 </Navbar.Collapse>
             </Container>
