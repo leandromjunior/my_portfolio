@@ -20,21 +20,21 @@ export const Projects = () => {
     const projects = [
         {
             title: "Customer Behaviour",
-            description: "Same brief of the notebook description",
+            description: "Based on the independent features, we want to estimate if the customer will purchase a product or not.",
             imgUrl: customerB,
-            link: 'https://github.com/leandromjunior/portfolio-projects-/tree/efdde1f080cf96be77e6643edefea02cfaf69fc2/Customer%20Behaviour',
+            link: 'https://colab.research.google.com/drive/1m9oOlAhllEBpDc9BK3aKJTvVnOYBr05v?usp=sharing',
         },
         {
             title: "Churn",
-            description: "Same brief of the notebook description",
+            description: "Model to predict the probability of costumers churning",
             imgUrl: churnImg,
-            link: "https://github.com/leandromjunior/portfolio-projects-/tree/efdde1f080cf96be77e6643edefea02cfaf69fc2/Churn",
+            link: "https://colab.research.google.com/drive/1984BnSUQfbNhoHsZGaOUzxabCx_b_1-e?usp=sharing",
         },
         {
             title: "Recommendation System",
-            description: "Same brief of the notebook description",
+            description: "Simple NLP model to recommend hotels based on the people's trip characteristics",
             imgUrl: recommender,
-            link: "https://github.com/leandromjunior/portfolio-projects-/tree/efdde1f080cf96be77e6643edefea02cfaf69fc2/Recommendation%20System",
+            link: "",
         },
         {
             title: "In Progress",
