@@ -2,11 +2,8 @@ import React from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import projImg1 from "../assets/img/project-img1.png";
 import churnImg from "../assets/img/churn_image.jpg";
-import projImg2 from "../assets/img/project-img2.png";
 import recommender from "../assets/img/Recommender_.png";
-import customerBehaviour2 from "../assets/img/customer-behaviour-analysis_.png";
 import customerB from "../assets/img/customer_behavior.jpg";
 import article from "../assets/img/article3-2.png";
 import article2 from "../assets/img/article.jpg";
@@ -34,7 +31,7 @@ export const Projects = () => {
             title: "Recommendation System",
             description: "Simple NLP model to recommend hotels based on the people's trip characteristics",
             imgUrl: recommender,
-            link: "",
+            link: "https://colab.research.google.com/drive/1w7Qjr7hPCz0mCFkKLag5ypGp8lQrRVGg?usp=sharing",
         },
         {
             title: "In Progress",
