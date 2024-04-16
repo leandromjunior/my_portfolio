@@ -8,6 +8,7 @@ import customerB from "../assets/img/customer_behavior.jpg";
 import article from "../assets/img/article3-2.png";
 import article2 from "../assets/img/article.jpg";
 import earthImg from "../assets/img/earth_image.jpg";
+import cluster from "../assets/img/clustering-algorithms.jpg";
 import tcc from "../assets/doc/TCC - Leandro Motta Junior.pdf";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -44,12 +45,24 @@ export const Projects = () => {
             imgUrl: article2,
             link: "https://github.com/leandromjunior/Exoplanets_habitability.git",
         },
+        {
+            title: "Energy Consumption",
+            description: "Cluster to measure the energy concumption of a population",
+            imgUrl: cluster,
+            link: "https://colab.research.google.com/drive/1UfmTROWuNqO7wgflmIBj84kri1nMIOk2?usp=sharing",
+        },
+        {
+            title: "House Price Prediction (In Progress)",
+            description: "Regressor model to predict Houses' price",
+            imgUrl: article2,
+            link: "",
+        },
     ]
 
     const articles = [
         {
             title: "Towards a Machine Learning Approach for Facilitating Exoplanet Habitability Discovery",
-            description: "We present a machine learning model for identifying habitable exoplanets using a concise set of variables related to planetary location and host star characteristics.",
+            description: "Introducing a machine learning model for identifying habitable exoplanets using a concise set of variables related to planetary location and host star characteristics.",
             imgUrl: article,
             link: tcc,
         }
