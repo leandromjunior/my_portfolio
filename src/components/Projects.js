@@ -43,7 +43,7 @@ export const Projects = () => {
             title: "Exoplanets Habitability Index",
             description: "Machine learning project focused on identifying potentially habitable planets",
             imgUrl: article2,
-            link: "https://github.com/leandromjunior/Exoplanets_habitability.git",
+            link: "https://colab.research.google.com/drive/1Qywe2MvGUxUKX8NACx4Xk-eLRFnehYPl?usp=sharing",
         },
         {
             title: "Energy Consumption",
