@@ -76,8 +76,8 @@ To start the project:
 
 1- Open CMD
 2 - Type the project (folder) Path
-3 - Run "npm install node_modules"
-4 - Run "npm start"
+3 - Run "npm install node_modules" (without quotes)
+4 - Run "npm start" (without quotes)
 
 Updates recentes:
 
