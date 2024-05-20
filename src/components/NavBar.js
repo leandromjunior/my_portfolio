@@ -7,6 +7,7 @@ import navIcon1 from 'C:/Users/Usuario/Desktop/my_portfolio/src/assets/img/nav-i
 import navIcon2 from 'C:/Users/Usuario/Desktop/my_portfolio/src/assets/img/nav-icon2.svg';
 import navIconGit from 'C:/Users/Usuario/Desktop/my_portfolio/src/assets/img/nav-icon-github-3.svg';
 import curriculum from "../assets/doc/curriculum.pdf";
+import kaggle from 'C:/Users/Usuario/Desktop/my_portfolio/src/assets/img/kaggle.svg';
 
 export const NavBar = () => {
     const [activeLink, setActivateLink] = useState('home');
@@ -45,12 +46,14 @@ export const NavBar = () => {
                 <Nav className="ms-auto">
                     <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
                     <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-                    <Nav.Link href="#project" className={activeLink === 'project' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('project')}>Projects</Nav.Link>                
+                    <Nav.Link href="#project" className={activeLink === 'project' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('project')}>Projects</Nav.Link>
+                    <Nav.Link href="#me" className={activeLink === 'me' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('me')}>About Me</Nav.Link>                
                 </Nav>
                 <span className='navbar-text'>
                     <div className='social-icon'>
                         <a href='#'><img src={navIcon1} alt="" /></a>
                         <a href='https://github.com/leandromjunior' target="_blank" rel="noopener noreferrer"><img src={navIconGit} alt="" /></a>
+                        <a href='https://www.kaggle.com/leandromottajr' target="_blank" rel="noopener noreferrer"><img src={kaggle} alt="" /></a>
                     </div>
                     <a href={curriculum} target="_blank" rel="noopener noreferrer">
                     <button className='vvd'><span>Curriculum</span></button>
