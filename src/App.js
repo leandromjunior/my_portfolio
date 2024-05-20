@@ -4,6 +4,7 @@ import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
 import {Skills} from './components/Skills';
 import { Projects } from './components/Projects';
+import { Me } from './components/Me';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Esconder o componente skills até achar uma utilidade para ele, caso o insira novamente, colocar AWS como uma skill
@@ -15,6 +16,7 @@ function App() {
     <Banner/>
     <Skills/>
     <Projects/>
+    <Me/>
     </div>
   );
 }
