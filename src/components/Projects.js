@@ -9,6 +9,7 @@ import article from "../assets/img/article3-2.png";
 import article2 from "../assets/img/article.jpg";
 import earthImg from "../assets/img/earth_image.jpg";
 import cluster from "../assets/img/clustering-algorithms.jpg";
+import houses from "../assets/img/houses.jpg";
 import tcc from "../assets/doc/TCC - Leandro Motta Junior.pdf";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -16,6 +17,18 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
 
     const projects = [
+        {
+            title: "Exoplanets Habitability Index",
+            description: "Machine learning project focused on identifying potentially habitable planets",
+            imgUrl: article2,
+            link: "https://colab.research.google.com/drive/1Qywe2MvGUxUKX8NACx4Xk-eLRFnehYPl?usp=sharing",
+        },
+        {
+            title: "House Price Prediction",
+            description: "Regressor model to predict Houses' price",
+            imgUrl: houses,
+            link: "https://colab.research.google.com/drive/1Tv44auKjx3LIe1eyj076W4g0kDYLIIMy?usp=sharing",
+        },
         {
             title: "Customer Behaviour",
             description: "Based on the independent features, we want to estimate if the customer will purchase a product or not.",
@@ -40,23 +53,11 @@ export const Projects = () => {
             imgUrl: earthImg,
         },
         {
-            title: "Exoplanets Habitability Index",
-            description: "Machine learning project focused on identifying potentially habitable planets",
-            imgUrl: article2,
-            link: "https://colab.research.google.com/drive/1Qywe2MvGUxUKX8NACx4Xk-eLRFnehYPl?usp=sharing",
-        },
-        {
             title: "Energy Consumption",
             description: "Cluster to measure the energy concumption of a population",
             imgUrl: cluster,
             link: "https://colab.research.google.com/drive/1UfmTROWuNqO7wgflmIBj84kri1nMIOk2?usp=sharing",
-        },
-        {
-            title: "House Price Prediction (In Progress)",
-            description: "Regressor model to predict Houses' price",
-            imgUrl: article2,
-            link: "",
-        },
+        },    
     ]
 
     const articles = [
