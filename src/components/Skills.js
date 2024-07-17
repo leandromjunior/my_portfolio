@@ -2,7 +2,10 @@ import React from "react";
 import { Col, Container, Row } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import meter1 from "../assets/img/meter1.svg";
+import python from "../assets/img/python-svg.svg";
+import docker from "../assets/img/docker.svg";
+import mysql from "../assets/img/mysql.svg";
+import stats from "../assets/img/statistics.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import colorSharp from '../assets/img/color-sharp2.png';
@@ -40,11 +43,11 @@ export const Skills = () => {
                             <p>Some brief skills that I carry and seek constant knowledge</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className='item'>
-                                    <img src={meter1} alt='image' />
+                                    <img src={python} alt='image' />
                                     <h5>Python</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter1} alt='image' />
+                                    <img src={mysql} alt='image' />
                                     <h5>SQL</h5>
                                 </div>
                                 <div className='item'>
@@ -56,11 +59,11 @@ export const Skills = () => {
                                     <h5>Problem-Solving</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter2} alt='image' />
+                                    <img src={stats} alt='image' />
                                     <h5>Statistic Models</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter2} alt='image' />
+                                    <img src={docker} alt='image' />
                                     <h5>Docker</h5>
                                 </div>
                             </Carousel>
