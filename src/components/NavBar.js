@@ -8,6 +8,7 @@ import navIcon2 from 'C:/Users/Usuario/Desktop/my_portfolio/src/assets/img/nav-i
 import navIconGit from 'C:/Users/Usuario/Desktop/my_portfolio/src/assets/img/nav-icon-github-3.svg';
 import curriculum from "../assets/doc/curriculum.pdf";
 import kaggle from 'C:/Users/Usuario/Desktop/my_portfolio/src/assets/img/kaggle.svg';
+import hackerrank from 'C:/Users/Usuario/Desktop/my_portfolio/src/assets/img/hackerrank.svg';
 
 export const NavBar = () => {
     const [activeLink, setActivateLink] = useState('home');
@@ -51,7 +52,7 @@ export const NavBar = () => {
                 </Nav>
                 <span className='navbar-text'>
                     <div className='social-icon'>
-                        <a href='#'><img src={navIcon1} alt="" /></a>
+                        <a href='https://www.hackerrank.com/profile/lemottajr' target="_blank" rel="noopener noreferrer"><img src={hackerrank} alt="" /></a>
                         <a href='https://github.com/leandromjunior' target="_blank" rel="noopener noreferrer"><img src={navIconGit} alt="" /></a>
                         <a href='https://www.kaggle.com/leandromottajr' target="_blank" rel="noopener noreferrer"><img src={kaggle} alt="" /></a>
                     </div>
