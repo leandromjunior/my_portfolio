@@ -56,9 +56,9 @@ export const NavBar = () => {
                         <a href='https://github.com/leandromjunior' target="_blank" rel="noopener noreferrer"><img src={navIconGit} alt="" /></a>
                         <a href='https://www.kaggle.com/leandromottajr' target="_blank" rel="noopener noreferrer"><img src={kaggle} alt="" /></a>
                     </div>
-                    {/*<a href={curriculum} target="_blank" rel="noopener noreferrer">*/}
+                    {/*<a href={curriculum} target="_blank" rel="noopener noreferrer">
                     <button className='vvd'><span>Curriculum</span></button>
-                    </a>
+                    </a>*/}
                 </span>
                 </Navbar.Collapse>
             </Container>
