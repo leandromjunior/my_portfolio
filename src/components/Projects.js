@@ -115,7 +115,7 @@ export const Projects = () => {
                                    }
                                 </Row>
                             </Tab.Pane>
-                            <Tab.Pane eventKey="third">Some implemented models</Tab.Pane>                          
+                            <Tab.Pane eventKey="third">Some implemented models (In progress)</Tab.Pane>                     
                         </Tab.Content>
                         </Tab.Container>
                     </Col>
